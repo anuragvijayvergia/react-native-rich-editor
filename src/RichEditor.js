@@ -190,7 +190,7 @@ export default class RichTextEditor extends Component {
                     onKeyDown?.(data);
                     break;
                 case messages.OFFSET_HEIGHT:
-                    that.setWebHeight(data);
+                    that.setWebHeight(data+50);
                     break;
                 case messages.OFFSET_Y:
                     let offsetY = Number.parseInt(Number.parseInt(data) + that.layout.y || 0);
